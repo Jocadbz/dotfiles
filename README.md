@@ -2,6 +2,8 @@
 My personal i3 dotfiles.
 
 
+![jocadbz's dotfiles](https://raw.githubusercontent.com/Jocadbz/dotfiles/main/assets/setup.png)
+
 ### What do you need:
 
 - i3-gaps
