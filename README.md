@@ -12,4 +12,6 @@ My personal i3 dotfiles.
 
 - bumblebee-status
 
+- colorscripts from DistroTube Gitlab
+
 And a bunch of other things you can see on the Config file.
