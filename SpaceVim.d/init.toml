@@ -41,6 +41,9 @@ default_position = 'top'
 default_height = 30
 
 [[layers]]
+  name = "lang#go"
+
+[[layers]]
   name = "lang#python"
   name = "lang#rust"
 
@@ -52,3 +55,6 @@ default_height = 30
 
 [[custom_plugins]]
   repo = 'arcticicestudio/nord-vim'
+
+[[custom_plugins]]
+  repo = 'mangeshrex/everblush.vim'

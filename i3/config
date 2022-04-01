@@ -36,9 +36,9 @@ exec_always --no-startup-id i3-auto-layout
 ########## Autolaunch ##########
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id feh --bg-fill /home/joaquim/Imagens/wallpapers/spacemars.jpg
+exec --no-startup-id nitrogen --restore
 exec --no-startup-id flameshot
-#exec --no-startup-id picom
+exec --no-startup-id picom
 
 ########## Keybindings ##########
 bindsym Mod4+Shift+s exec i3lock 
@@ -77,9 +77,10 @@ bindsym Mod4+Return exec alacritty
 # kill focused window
 bindsym Mod4+Shift+q kill
 
-# start dmenu (a program launcher)
+### start dmenu (a program launcher)
 #bindsym Mod4+d exec dmenu_run
 bindsym Mod4+d exec rofi -show drun -icon-theme "Papirus" -show-icons
+#bindsym Mod4+d exec rofi -show run
 
 # change focus
 bindsym Mod4+$left focus left
@@ -218,10 +219,11 @@ bindsym Mod4+r mode "resize"
 # finds out, if available)
 bar {
         position top
-        status_command /usr/bin/bumblebee-status -m nic brightness \
-            amixer battery datetime \
-            -p interval=1s nic.states=^down nic.format=" {ssid}"\
-            -t nord-powerline \
+         status_command i3status
+#        status_command /usr/bin/bumblebee-status -m nic brightness \
+#            amixer battery datetime \
+#            -p interval=1s nic.states=^down nic.format=" {ssid}"\
+#            -t nord-powerline \
 
 
 
@@ -252,6 +254,6 @@ for_window [title="Preferences$"] floating enable
 for_window [class="Gnome-calculator" instance="gnome-calculator"] floating enable
 
 smart_borders no_gaps
-smart_gaps on
-gaps inner 6
+#smart_gaps on
+gaps inner 10
 gaps outer 0
