@@ -1,0 +1,24 @@
+# Alacritty config
+#
+# Config for window opacity and fonts.
+window:
+  opacity: 0.9
+
+font:
+  normal:
+    family: hack
+    style: Regular
+
+  bold:
+    family: hack
+    style: Bold
+
+  italic:
+    family: hack
+    style: Italic
+
+  bold_italic:
+    family: hack
+    style: Bold Italic
+
+  size: 11
